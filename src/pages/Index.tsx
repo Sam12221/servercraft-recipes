@@ -1,4 +1,5 @@
 import { ServerCard } from "@/components/ServerCard";
+import { GettingStarted } from "@/components/GettingStarted";
 import { mcpServers } from "@/data/mcpServers";
 import { Code2, Sparkles, Zap } from "lucide-react";
 
@@ -42,8 +43,10 @@ const Index = () => {
       {/* Servers Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto space-y-8">
+          <GettingStarted />
+          
           <div className="text-center space-y-2 mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold">Server Examples</h2>
+            <h2 className="text-3xl md:text-4xl font-bold gradient-text">MCP Server Examples</h2>
             <p className="text-muted-foreground text-lg">
               Choose a template and start building your MCP server in minutes
             </p>

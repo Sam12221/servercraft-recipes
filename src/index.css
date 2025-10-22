@@ -54,6 +54,14 @@ All colors MUST be HSL.
   code {
     font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
   }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent;
+  }
+
+  .card-gradient {
+    @apply bg-gradient-to-br from-card via-card to-muted/50;
+  }
 }
 
 @layer base {
